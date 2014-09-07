@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<!--
+    Strongly Typed by HTML5 UP
+    html5up.net | @n33co
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  -->
+<html lang="en" ng-app="plo">
+
+  <head>
+    <title>Pregnancy and Lactation Osteoporosis</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!--[if lte IE 8]><script src="static/css/ie/html5shiv.js"></script><![endif]-->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.dropotron.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+
+    <noscript>
+      <link rel="stylesheet" href="css/skel.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/style-desktop.css" />
+    </noscript>
+
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+  </head>
+
+
+  <body class="homepage">
+
+    <!-- Header -->
+    <div id="header-wrapper">
+      <div id="header" class="container">
+
+        <!-- Logo -->
+        <h1 id="logo"><a href="index.html">PLO Resource Center</a></h1>
+        <p>The source of information for Pregnancy and Lactation associated Osteoporosis</p>
+
+        <!-- Nav -->
+        <nav id="nav">
+          <ul>
+            <li><a class="icon fa-home" href="/"><span>Introduction</span></a></li>
+            <li><a class="icon fa-map-marker" href="/find-a-doctor"><span>Find a Doctor</span></a></li>
+            <li><a class="icon fa-book" href="/resource-library"><span>Resource Library</span></a></li>
+            <li><a class="icon fa-female" href="/testimonials"><span>Testimonials</span></a></li>
+            <li><a class="icon fa-question" href="/"><span>FAQ</span></a></li>
+          </ul>
+        </nav>
+
+
+      </div>
+    </div>
+
+    <div ng-view></div>
+
+    <!-- Footer -->
+    <div id="footer-wrapper">
+      <div id="footer" class="container">
+        <header>
+          <h2>Questions or suggestions? <strong>Get in touch:</strong></h2>
+        </header>
+        <div class="row">
+          <div class="6u">
+            <section>
+              <form method="post" action="#">
+                <div class="row half">
+                  <div class="6u">
+                    <input name="name" placeholder="Name" type="text" />
+                  </div>
+                  <div class="6u">
+                    <input name="email" placeholder="Email" type="text" />
+                  </div>
+                </div>
+                <div class="row half">
+                  <div class="12u">
+                    <textarea name="message" placeholder="Message"></textarea>
+                  </div>
+                </div>
+                <div class="row half">
+                  <div class="12u">
+                    <a href="#" class="form-button-submit button icon fa-envelope">Send Message</a>
+                  </div>
+                </div>
+              </form>
+            </section>
+          </div>
+          <div class="6u">
+            <section>
+              <p>Remember <strong>you are not in this alone.</strong>  Feel free to reach out to us if you're looking for support.  If you have a testimonial you would like featured on this site, or if you have a resource we haven't linked to, please let us know!  The more information we can provide to others, the better.</p>
+              <div class="row">
+                <ul class="icons 6u">
+                  <li class="icon fa-twitter">
+                    <a href="#">@plo</a>
+                  </li>
+                  <li class="icon fa-facebook">
+                    <a href="#">facebook.com/plo</a>
+                  </li>
+                </ul>
+                <ul class="icons 6u">
+                  <li class="icon fa-envelope">
+                    <a href="#">info@plo.org</a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/jquery-ui/ui/jquery-ui.js"></script>
+    <script src="lib/lodash/dist/lodash.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-resource/angular-resource.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="lib/angular-ui-date/src/date.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/home/home-controller.js"></script>
+
+    <!-- livereload script -->
+    <script type="text/javascript">document.write('<script src="http://'
+                                                                + (location.host || 'localhost').split(':')[0]
+                                                                + ':35729/livereload.js?snipver=1" type="text/javascript"><\/script>')
+      </script>
+  </body>
+</html>
