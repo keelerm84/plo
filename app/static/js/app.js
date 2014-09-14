@@ -1,5 +1,5 @@
 // Declare app level module which depends on filters, and services
-angular.module('plo', ['ngResource', 'ngRoute', 'ui.bootstrap', 'ui.date', 'google-maps'])
+angular.module('plo', ['ngResource', 'ngRoute', 'ngSanitize', 'ui.bootstrap', 'ui.date', 'google-maps'])
   .config(['$routeProvider', function ($routeProvider) {
     $routeProvider
       .when('/', {

@@ -1,4 +1,5 @@
 from app import db
+import markdown
 
 
 class Testimonial(db.Model):
@@ -10,7 +11,7 @@ class Testimonial(db.Model):
     def to_dict(self):
         return dict(
             first_name=self.first_name,
-            story=self.story,
+            story=markdown.markdown(self.story),
             photo_path=self.photo_path,
             id=self.id
         )
