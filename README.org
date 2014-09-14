@@ -1,0 +1,25 @@
+* Pregnancy and Lactation Associated Osteoporosis
+
+This is the site for the PLO website.  The goal of this site is to help
+disseminate information about this rare and life altering disease.  By
+providing more information and resources, we hope to help women feel more
+comforted, knowing they are not going through this struggle alone.
+
+* Setup
+
+In order to run a local copy of this site, please perform the following steps.
+
+#+BEGIN_SRC sh
+  git clone ssh://github.com/keelerm84/plo.git
+  cd plo
+  pip install -r requirements.txt
+  bower install
+  python server.py
+#+END_SRC
+
+* Contribute
+
+We welcome any forms of contributions to this site.  Programming is not the
+only way you can contribute.  If you have additional resources not linked to on
+the site, feel free to add them.  Or if you are aware of doctors who are
+trained to treat PLO, add them to the map.
