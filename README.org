@@ -12,9 +12,11 @@ In order to run a local copy of this site, please perform the following steps.
 #+BEGIN_SRC sh
   git clone ssh://github.com/keelerm84/plo.git
   cd plo
+  python virtualenv.py flask
+  . flask/bin/activate
   pip install -r requirements.txt
   bower install
-  python server.py
+  python run.py
 #+END_SRC
 
 * Contribute
