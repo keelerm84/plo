@@ -877,6 +877,8 @@
 /* Google map                                                                    */
 /*********************************************************************************/
 
+.angular-google-map-container { height: 500px; }
+
 .mapInfoWindow {
     text-align: left;
 }
@@ -892,8 +894,6 @@
 }
 
 .profile-images {
-    width: 150px;
-    height: 150px;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
@@ -918,3 +918,9 @@
 }
 
 #photos .testimonial { display: none; }
+
+.vcard { color: #000; line-height: 1.5em; }
+.vcard img { width: 50px; }
+.vcard p { margin-bottom: 0; }
+.vcard .title { font-style: italic; }
+.vcard .fn { font-weight: bold; }
