@@ -1,0 +1,26 @@
+<!-- Main -->
+<div id="main-wrapper" ng-init="find()">
+  <div id="main" class="container">
+    <div class="row">
+
+      <!-- Content -->
+      <div id="content" class="12u">
+
+        <!-- Post -->
+        <article class="box post">
+          <header>
+            <h2>{{ testimonial.first_name }}</h2>
+          </header>
+          <div class="row">
+            <div class="2u">
+              <img src="{{ testimonial.photo_path }}" class="profile-images active" alt="{{ testimonial.first_name }}" />
+            </div>
+            <div class="10u">
+              {{ testimonial.story }}
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>

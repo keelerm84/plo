@@ -8,10 +8,8 @@ angular.module('plo', ['ngResource', 'ngRoute', 'ui.bootstrap', 'ui.date', 'goog
       .when('/resource-library', {
         templateUrl: 'views/pages/resource-library.html',
         controller: 'ResourceLibraryController'})
-      .when('/testimonials/:person', {
-        templateUrl: function (params) {
-          return 'views/pages/testimonials/' + params.person + '.html';
-        },
+      .when('/testimonials/:id', {
+        templateUrl: 'views/pages/testimonial.html',
         controller: 'TestimonialsController'})
       .when('/testimonials', {
         templateUrl: 'views/pages/testimonials.html',

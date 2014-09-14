@@ -1,5 +1,5 @@
 <!-- Main -->
-<div id="main-wrapper">
+<div id="main-wrapper" ng-init="all()">
   <div id="main" class="container">
     <div class="row">
 
@@ -20,19 +20,8 @@
     <div class="row">
       <div id="photos" class="12u">
         <div class="row">
-          <div class="2u">
-            <a ng-href="#/testimonials/melissa-richardson" class="image profile-images"><img src="images/profiles/melissa-richardson.jpg" alt="" /></a>
-          </div>
-          <div class="2u">
-            <a ng-href="#/testimonials/lucy-marciani" class="image profile-images"><img src="images/profiles/lucy-marciani.jpg" alt="" /></a>
-          </div>
-          <div class="2u">
-            <a ng-href="#/testimonials/monika-whittenburg" class="image profile-images"><img src="images/profiles/monika-whittenburg.jpg" alt="" /></a>
-          </div>
-          <div class="2u">
-            <a ng-href="#/testimonials/marlene-bloemheuvel" class="image profile-images"><img src="images/profiles/1.jpg" alt="" /></a>
-          </div>
-          <div class="4u">
+          <div class="2u" ng-repeat="testimonial in testimonials">
+            <a ng-href="#/testimonials/{{ testimonial.id }}" class="image profile-images"><img src="{{ testimonial.photo_path }}" alt="{{ testimonial.first_name }}" /></a>
           </div>
         </div>
       </div>

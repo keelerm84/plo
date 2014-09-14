@@ -1,5 +1,35 @@
 {
 	"baseName": "plo",
-	"entities": [],
+	"entities": [
+		{
+			"name": "testimonial",
+			"attrs": [
+				{
+					"attrName": "first_name",
+					"attrType": "String",
+					"minLength": "",
+					"maxLength": "",
+					"enumValues": [],
+					"required": true
+				},
+				{
+					"attrName": "story",
+					"attrType": "String",
+					"minLength": "",
+					"maxLength": "",
+					"enumValues": [],
+					"required": true
+				},
+				{
+					"attrName": "photo_path",
+					"attrType": "String",
+					"minLength": "",
+					"maxLength": "",
+					"enumValues": [],
+					"required": true
+				}
+			]
+		}
+	],
 	"resources": []
 }
