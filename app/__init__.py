@@ -7,6 +7,8 @@ db = SQLAlchemy(app)
 
 
 from app.models import testimonial
+from app.models import doctor
 from app.routes import index
 
 from app.routes import testimonials
+from app.routes import doctors

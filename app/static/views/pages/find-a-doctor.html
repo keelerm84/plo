@@ -2,7 +2,7 @@
 </style>
 
 <!-- Main -->
-<div id="main-wrapper">
+<div id="main-wrapper" ng-init="all()">
   <div id="main" class="container">
     <div class="row">
 
@@ -16,7 +16,7 @@
           </header>
         </article>
         <google-map center="map.center" zoom="map.zoom" draggable="true">
-          <marker idKey="1" coords="{ latitude: -38.149881, longitude: 144.36861899999997 }">
+          <marker ng-repeat="doctor in doctors" idKey="doctor.id" coords="{ latitude: doctor.latitude, longitude: doctor.longitude }">
             <window>
               <div class="vcard">
                 <div class="row">
@@ -24,69 +24,12 @@
                     <img src="images/doctor-symbol.jpg" />
                   </div>
                   <div class="10u">
-                    <p class="fn">Dr. Natalie Harrison</p>
-                    <p class="title">Endocrinologist</p>
-                    <div class="street-address">248 Malop St</div>
-                    <span class="region">Geelong Victoria</span>
-                    <span class="country-name">Australia</span>
-                    <span class="postal-code">3220</span>
-                  </div>
-                </div>
-              </div>
-            </window>
-          </marker>
-          <marker idKey="2" coords="{ latitude: -27.9589439, longitude: 153.38115919999996 }">
-            <window>
-              <div class="vcard">
-                <div class="row">
-                  <div class="2u">
-                    <img src="images/doctor-symbol.jpg" />
-                  </div>
-                  <div class="10u">
-                    <p class="fn">Peter Daveron</p>
-                    <p class="title">Endocrinologist</p>
-                    <div class="street-address">1 Hospital Boulevard</div>
-                    <span class="region">Southport OLD</span>
-                    <span class="country-name">Australia</span>
-                    <span class="postal-code">4215</span>
-                  </div>
-                </div>
-              </div>
-            </window>
-          </marker>
-          <marker idKey="3" coords="{ latitude: 51.342852, longitude: 12.380698800000005 }">
-            <window>
-              <div class="vcard">
-                <div class="row">
-                  <div class="2u">
-                    <img src="images/doctor-symbol.jpg" />
-                  </div>
-                  <div class="10u">
-                    <p class="fn">Dr. Lutz Seydlitz</p>
-                    <p class="title">Orthopedic Doctor</p>
-                    <div class="street-address">Richard-Wagner-Strasse </div>
-                    <span class="region">Leipzig</span>
-                    <span class="country-name">Germany</span>
-                    <span class="postal-code">04109</span>
-                  </div>
-                </div>
-              </div>
-            </window>
-          </marker>
-          <marker idKey="4" coords="{ latitude: 51.3155967, longitude: 12.302339800000027 }">
-            <window>
-              <div class="vcard">
-                <div class="row">
-                  <div class="2u">
-                    <img src="images/doctor-symbol.jpg" />
-                  </div>
-                  <div class="10u">
-                    <p class="fn">Prof. Dr. Jürgen Krug</p>
-                    <p class="title">Endocrinologist</p>
-                    <div class="street-address">Nikolai-Rumjanzew-Strasse 100</div>
-                    <span class="region">Leipzig</span>
-                    <span class="country-name">Germany</span>
-                    <span class="postal-code">04207</span>
+                    <p class="fn">{{ doctor.name }}</p>
+                    <p class="title">{{ doctor.title }}</p>
+                    <div class="street-address">{{ doctor.street }}</div>
+                    <span class="city">{{ doctor.city }}</span>
+                    <span class="region">{{ doctor.region }}</span>
+                    <span class="postal-code">{{ doctor.postal_code }}</span>
                   </div>
                 </div>
               </div>
