@@ -17,5 +17,8 @@ angular.module('plo', ['ngResource', 'ngRoute', 'ngSanitize', 'ui.bootstrap', 'u
       .when('/find-a-doctor', {
         templateUrl: 'views/pages/find-a-doctor.html',
         controller: 'FindDoctorController'})
+      .when('/faq', {
+        templateUrl: 'views/pages/faq.html',
+        controller: 'FaqController'})
       .otherwise({redirectTo: '/'});
   }]);
