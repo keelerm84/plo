@@ -3,7 +3,8 @@
 *.pyc
 *.swp
 *~
-db_repository
+db_repository/*
+!db_repository/versions
 flask
 node_modules
 app/static/lib/*
